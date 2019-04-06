@@ -1,4 +1,4 @@
-function f = draw_step_function(step_content)
+function f = draw_step_function(step_content, plot_from, plot_to)
     i = 1;
 
     while (i < length(step_content))
@@ -11,8 +11,8 @@ function f = draw_step_function(step_content)
     
     left_half = step_content(1:first_one_pos-1);
     right_half = step_content(first_one_pos:length(step_content));
-    x_left = linspace(-2.5, 0, length(left_half));
-    x_right = linspace(0, 2.5, length(right_half));
+    x_left = linspace(plot_from, 0, length(left_half));
+    x_right = linspace(0, plot_to, length(right_half));
     
     plot(x_left,left_half, x_right,right_half);
 end
