@@ -14,5 +14,6 @@ function f = draw_step_function(step_content, plot_from, plot_to)
     x_left = linspace(plot_from, 0, length(left_half));
     x_right = linspace(0, plot_to, length(right_half));
     
-    plot(x_left,left_half, x_right,right_half);
+    plot(x_left,left_half,'b', x_right,right_half,'b','LineWidth',2);
+    ylim([-2 2])
 end
