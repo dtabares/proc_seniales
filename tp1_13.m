@@ -22,41 +22,57 @@ function f = tp1_13()
     plot(X,orig)
     title('Original')
     legend({'s(t)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
     
     subplot(4,2,2);
     plot(X,mirrored)
     title('Espejada')
     legend({'s(-t)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
     
     subplot(4,2,3);
     plot(X,desplazada_der)
     title('Desplazada a derecha')
-    legend({'s(t - 2pi)'},'Location','southwest')
+    legend({'s(t - 2\pi)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
     
     subplot(4,2,4);
     plot(X,desplazada_izq)
     title('Desplazada a izquierda')
-    legend({'s(t + 2pi)'},'Location','southwest')
-
+    legend({'s(t + 2\pi)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
+    
     subplot(4,2,5);
     plot(X,deplazada_y_espejada)
     title('Desplazada y Espejada')
-    legend({'s(-t + pi)'},'Location','southwest')
+    legend({'s(-t + \pi)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
     
     subplot(4,2,6);
     plot(X,agrandada)
     title('Escalada')
     legend({'s(4t)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
     
     subplot(4,2,7);
     plot(X,reducida)
     title('Escalada')
     legend({'s(1/4t)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
     
     subplot(4,2,8);
     plot(X,escalada_factor_negativo)
     title('Escalada')
     legend({'s(-1/2t)'},'Location','southwest')
+    xticks([-5*pi -4*pi -3*pi -2*pi -pi 0 pi 2*pi 3*pi 4*pi 5*pi])
+    xticklabels({'-5\pi','-4\pi','-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi','4\pi','5\pi' })
 
 end
 
